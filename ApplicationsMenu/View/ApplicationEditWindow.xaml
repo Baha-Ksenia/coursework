@@ -1,0 +1,31 @@
+﻿<Window x:Class="ApplicationsMenu.ApplicationEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationsMenu"
+        mc:Ignorable="d"
+        Title="{Binding Tittle}" Height="293" Width="330"
+		ResizeMode="NoResize"
+		Visibility="{Binding WindowVisibility, Mode=TwoWay}">
+
+    <Grid>
+        <StackPanel Margin="23,0,23,0">
+            <Label Content="Ресторан" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,5,0,0"/>
+            <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="188" Margin="0,5,0,0" ItemsSource="{Binding RestaurantsList}" SelectedItem="{Binding SelectedRestaurant}" DisplayMemberPath="Name"/>
+            <Label Content="Продукция" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,5,0,0"/>
+            <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="188" Margin="0,5,0,0" ItemsSource="{Binding ProductsList}" SelectedItem="{Binding SelectedProduct}" DisplayMemberPath="Name"/>
+            <Label Content="Количество" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,5,0,0"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="188" Margin="0,5,0,0" Text="{Binding Count, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button HorizontalAlignment="Center" Height="37" Width="185" Margin="0,35,0,0" Content="Запись" Command="{Binding EditModelCommand}" BorderBrush="White" Foreground="White">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0025B2" Offset="1"/>
+                        <GradientStop Color="#FF5C7DFB" Offset="0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

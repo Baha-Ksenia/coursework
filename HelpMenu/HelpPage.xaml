@@ -1,0 +1,31 @@
+﻿<Page x:Class="HelpMenu.HelpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpMenu"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="910"
+      Title="HelpPage">
+
+	<Grid Background="White" Margin="0,0,53,0">
+		<RichTextBox Margin="108,59,108,59" >
+			<FlowDocument>
+
+                
+                <Paragraph>
+                    <Run Text="Контактная информация: телефон +7-960-921-40-04" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Для пользователя представны доступные пункты меню сверху. В зависимости от предоставленного доступа администратором это: чтение, редактирование, запись, удаление." Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="в каждом разделе представлены кнопки с названием, описывающее их действие. Если кнопка горит серым и не наживается - администратор не предоставил вам необходимый доступ, обратитесь к нужному лицу" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Любые изменения: добавить/удалить/редактировать происходит единожды" Foreground="Black"/>
+                </Paragraph>
+            </FlowDocument>
+		</RichTextBox>
+	</Grid>
+</Page>

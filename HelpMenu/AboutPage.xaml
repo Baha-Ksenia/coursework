@@ -1,0 +1,35 @@
+﻿<Page x:Class="HelpMenu.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpMenu"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="910"
+      Title="AboutPage">
+
+	<Grid Background="White">
+		<RichTextBox Margin="75,59,255,59">
+			<FlowDocument>
+                
+                <Paragraph>
+                    <Run Text="Описание: Приложение позволяет оптимизировать процессы поставки и хранения продуктов, а также сокращение времени и ресурсов, затрачиваемые на учет и контроль" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Версия приложения: 1.0.0" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Разработчик: Бахтиярова Ксения Вадимовна" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Контактная информация: телефон +7-960-921-40-04" Foreground="Black"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Для дополнительной информации вы можете обратиться к разделу 'Справка'" Foreground="Black"/>
+                </Paragraph>
+
+
+            </FlowDocument>
+		</RichTextBox>
+	</Grid>
+</Page>
